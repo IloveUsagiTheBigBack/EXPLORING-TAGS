@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Web Programming</title>
+  <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body id="hi">
+<nav>
+  <h2 class="navbar">Cecillia's Useless Website</h2>
+  <div class="nav-links">
+    <p>Home</p>
+    <p>About</p>
+    <p onclick="Rick()">Useless Button</p>
+  </div>
+</nav>
+
+<form id="form">
+  <h3>Very Useless Form</h3>
+  <label for="name">Enter Your Name:</label><br>
+  <input id="name" placeholder="Enter Your Name"><br>
+  <label for="age">Enter Your Age:</label><br>
+  <input id="age" placeholder="Enter Your Age"><br>
+  <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<footer>
+  <p>Made By Cecillia</p>
+</footer>
+
+<script>
+  function submitForm() {
+    document.getElementById("form").innerHTML = "Thank You For Your Response";
+  }
+  function Rick() {
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  }
+</script>
+</body>
+</html>
